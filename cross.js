@@ -59,8 +59,8 @@
 	}
 
 
-	function $$(id) {
-		return document.getElementById(id);
+	function $$(id, scope) {
+		return (scope || document).getElementById(id);
 	}
 
 	function params (name) {
