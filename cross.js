@@ -73,13 +73,16 @@
 		return undefined === name ? hash : hash[name];
 	}
 
-	/* Converts all applicable characters to HTML entities
-	 *
+	/**
+	 * Converts all applicable characters to HTML entities
+	 * Use with attention!
+	 * 
+	 * @see: http://benv.ca/2012/10/4/you-are-probably-misusing-DOM-text-methods/
 	 * @author: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
 	 */
 	function htmlentities (s) {
-		var div = new Node("div"), text = document.createTextNode(s);
-		div.appendChild(text);
+		var div = new Node("div");
+		div.appendChild(document.createTextNode(s));
 		return div.innerHTML;
 	}
 
