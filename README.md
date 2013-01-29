@@ -1,7 +1,7 @@
 cross.js
 ========
 
-Convinient way of HTTP and DOM interaction across different browsers.
+Convenient way of HTTP and DOM interaction across different browsers.
 
 [![Better JavaScript Docs][1]][2]
 
